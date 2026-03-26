@@ -4,14 +4,14 @@ import App from './App'
 // PRUEBA 1: Verifica que el título existe en el DOM
 test('muestra el título de la app', () => {
   render(<App />)
-  const titulo = screen.getByText(/Hola DevOps/i)
+  const titulo = screen.getByText(/Aplicación DevOps/i)
   expect(titulo).toBeInTheDocument()
 })
 
 // PRUEBA 2: Verifica que el mensaje de despliegue existe
 test('muestra el mensaje de despliegue', () => {
   render(<App />)
-  const mensaje = screen.getByText(/GitHub Actions/i)
+  const mensaje = screen.getByText(/Pipeline completamente automático con GitHub Actions/i)
   expect(mensaje).toBeInTheDocument()
 })
 
